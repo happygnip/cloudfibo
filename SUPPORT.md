@@ -2,7 +2,7 @@
 
 ## GitHub Discussions
 
-适合产品使用交流、部署经验、功能建议和一般问答。仓库发布后建议启用以下分类：
+适合产品使用交流、部署经验、功能建议和一般问答：[进入 CloudFibo Discussions](https://github.com/happygnip/cloudfibo/discussions)。
 
 - Announcements：版本发布与重要通知。
 - Q&A：安装、配置和使用问题。

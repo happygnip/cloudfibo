@@ -45,7 +45,7 @@ flowchart LR
 
 ## 快速开始
 
-CloudFibo 提供 Docker Compose 单机部署方式。正式公开安装包将通过 GitHub Releases 发布：
+CloudFibo 提供 Docker Compose 单机部署方式。正式安装包通过 GitHub Releases 发布，并同步存储到阿里云 OSS：
 
 ```bash
 # 下载并解压 Release 中的 cloudfibo-compose-<version>.tar.gz
@@ -70,7 +70,7 @@ License 文件采用数字签名校验，不要求生产环境持续连接授权
 
 ## 社区与反馈
 
-- 使用问题与经验交流：GitHub Discussions（仓库发布后启用）。
+- 使用问题与经验交流：[GitHub Discussions](https://github.com/happygnip/cloudfibo/discussions)。
 - 可复现的软件缺陷：GitHub Issues。
 - 安全问题：请按 [SECURITY.md](SECURITY.md) 私下报告。
 - 商务、部署与 License：`postmaster@cloudfibo.com`。

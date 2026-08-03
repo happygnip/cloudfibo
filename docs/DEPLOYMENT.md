@@ -18,7 +18,20 @@
 
 ## 获取安装包
 
-从仓库的 **Releases** 页面下载与目标版本对应的 Compose 包，不要混用不同版本的部署文件、后端镜像与前端镜像。
+从仓库的 **Releases** 页面下载与目标版本对应的 Compose 包。发布流水线也会将同一批文件同步到阿里云 OSS 的 `compose/<product-version>/<image-tag>/` 路径。不要混用不同版本的部署文件、后端镜像与前端镜像。
+
+每个版本包含：
+
+- `cloudfibo-compose-<image-tag>.tar.gz`：Compose 部署目录。
+- `cloudfibo-compose-<image-tag>.tar`：离线镜像包。
+- `cloudfibo-compose-<image-tag>-images.txt`：镜像清单。
+- `cloudfibo-compose-<image-tag>-SHA256SUMS.txt`：下载文件校验值。
+
+下载后先验证文件完整性：
+
+```bash
+sha256sum -c cloudfibo-compose-<image-tag>-SHA256SUMS.txt
+```
 
 ```bash
 tar -xzf cloudfibo-compose-<version>.tar.gz
@@ -79,4 +92,4 @@ https://cloudfibo.example.com:8443/
 
 ## 下一步
 
-首个公开 Release 发布后，本页将补充精确下载地址、最低资源配置、镜像清单、校验和与升级路径。
+首个公开 Release 发布后，本页将补充精确下载地址、最低资源配置与升级路径。
