@@ -1,0 +1,13 @@
+# 本地与运行时敏感文件
+.env
+*.lic
+*.key
+*.pem
+*.p12
+*.pfx
+
+# 编辑器与系统文件
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

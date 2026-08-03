@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用问答与功能建议
+    url: https://github.com/happygnip/cloudfibo/discussions
+    about: 请在 Discussions 中交流使用问题和产品建议。
+  - name: License 与商务咨询
+    url: mailto:postmaster@cloudfibo.com
+    about: 请通过邮件私下提交 License 申请和联系信息。

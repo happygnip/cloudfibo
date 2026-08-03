@@ -1,0 +1,54 @@
+name: Bug 报告
+description: 报告可复现的 CloudFibo 软件问题
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先删除日志中的账号、IP、Token、云密钥、License、平台指纹和客户数据。
+  - type: input
+    id: version
+    attributes:
+      label: CloudFibo 版本
+      placeholder: 例如 v1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: 部署方式
+      options:
+        - Docker Compose
+        - Kubernetes / Helm
+        - 虚拟机
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请提供最小、可重复的操作步骤。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果与已脱敏日志
+    validations:
+      required: true
+  - type: checkboxes
+    id: sensitive
+    attributes:
+      label: 信息安全确认
+      options:
+        - label: 我确认提交内容不含凭据、License、平台指纹和客户敏感数据。
+          required: true
