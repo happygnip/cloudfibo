@@ -18,7 +18,17 @@
 
 ## 获取安装包
 
-从仓库的 **Releases** 页面下载与目标版本对应的 Compose 包。发布流水线也会将同一批文件同步到阿里云 OSS 的 `compose/<product-version>/<image-tag>/` 路径。不要混用不同版本的部署文件、后端镜像与前端镜像。
+从仓库的 **Releases** 页面下载与目标版本对应的 Compose 包。发布流水线也会将同一批文件同步到以下阿里云 OSS 公开目录：
+
+```text
+https://cloudfibo-release.oss-cn-beijing.aliyuncs.com/compose/<product-version>/<image-tag>/
+```
+
+已验证可公开下载的离线镜像包：
+
+[cloudfibo-compose-v3.3.5-build.2026070801.tar](https://cloudfibo-release.oss-cn-beijing.aliyuncs.com/compose/3.3.5/v3.3.5-build.2026070801/cloudfibo-compose-v3.3.5-build.2026070801.tar)
+
+该历史版本只包含离线镜像包与镜像清单；从下一次 Release 开始，流水线会同时发布 Compose 部署目录和 SHA-256 校验文件。不要混用不同版本的部署文件、后端镜像与前端镜像。
 
 每个版本包含：
 

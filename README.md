@@ -47,8 +47,11 @@ flowchart LR
 
 CloudFibo 提供 Docker Compose 单机部署方式。正式安装包通过 GitHub Releases 发布，并同步存储到阿里云 OSS：
 
+- [OSS 公开下载目录说明](docs/DEPLOYMENT.md#获取安装包)
+- [v3.3.5-build.2026070801 离线镜像包](https://cloudfibo-release.oss-cn-beijing.aliyuncs.com/compose/3.3.5/v3.3.5-build.2026070801/cloudfibo-compose-v3.3.5-build.2026070801.tar)
+
 ```bash
-# 下载并解压 Release 中的 cloudfibo-compose-<version>.tar.gz
+# 下载并解压 Release 或 OSS 中的 cloudfibo-compose-<version>.tar.gz
 cd deploy/docker-compose
 chmod +x ./deploy.sh
 ./deploy.sh --public-origin "https://localhost:8443" --gateway-https-port 8443
